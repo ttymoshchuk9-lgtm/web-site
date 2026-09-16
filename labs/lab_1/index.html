@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна робота №1 | Форма реєстрації</title>
+</head>
+<body>
+
+  <header>
+    <p><a href="/web-site/">← На головну</a></p>
+    <h1>Лабораторна робота №1: Форма реєстрації</h1>
+  </header>
+
+  <hr>
+
+  <main>
+    <section>
+      <h2>Реєстрація користувача</h2>
+      
+      <form action="https://webhook.site/c09eca37-1035-4300-bcb7-668ab9706e92" method="POST">
+        
+        <!-- a. Ім'я -->
+        <p>
+          <label for="first-name">Ім'я:*</label><br>
+          <input type="text" id="first-name" name="firstName" required>
+        </p>
+
+        <!-- b. Прізвище -->
+        <p>
+          <label for="last-name">Прізвище:*</label><br>
+          <input type="text" id="last-name" name="lastName" required>
+        </p>
+
+        <!-- c. Email -->
+        <p>
+          <label for="user-email">Електронна пошта:*</label><br>
+          <input type="email" id="user-email" name="email" required>
+        </p>
+
+        <!-- d. Пароль -->
+        <p>
+          <label for="user-password">Пароль:*</label><br>
+          <input type="password" id="user-password" name="password" required>
+        </p>
+
+        <!-- e. Підтвердження паролю -->
+        <p>
+          <label for="confirm-password">Підтвердження паролю:*</label><br>
+          <input type="password" id="confirm-password" name="confirmPassword" required>
+        </p>
+
+        <!-- g. Дата народження -->
+        <p>
+          <label for="birth-date">Дата народження:</label><br>
+          <input type="date" id="birth-date" name="birthDate">
+        </p>
+
+        <!-- g. Стать -->
+        <p>
+          <label for="user-gender">Стать:</label><br>
+          <select id="user-gender" name="gender">
+            <option value="">-- Оберіть стать --</option>
+            <option value="female">Жіноча</option>
+            <option value="male">Чоловіча</option>
+            <option value="other">Інше</option>
+          </select>
+        </p>
+
+        <!-- f. Кнопка відправки -->
+        <p>
+          <input type="submit" value="Зареєструватися">
+        </p>
+
+      </form>
+    </section>
+  </main>
+
+  <hr>
+
+  <footer>
+    <p><a href="/web-site/">Повернутися до головного меню</a></p>
+  </footer>
+
+</body>
+</html>
